@@ -1,19 +1,194 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
 ---
 
 <Layout title="DesarrollaTec | Inicio.">
-	<header class="bg-slate-100">
-		<h1>
-			DesarrollaTec
-		</h1>
-		<nav>
-			
-		</nav>
-	</header>
-	<main class="bg-slate-50">
-		<p>
-			Bienvenid@ a DesarrollaTec
-		</p>
-	</main>
+  <Nav />
+  <main
+    class="bg-slate-50 lg:h-[95svh] w-full p-2 flex flex-1 flex-col justify-start items-center gap-2"
+  >
+    <section
+      class="w-full md:min-h-[95svh] px-24 flex flex-row justify-center items-center"
+      id="hero"
+    >
+      <div
+        class="h-full w-full flex flex-col flex-1 gap-2 justify-center items-start"
+      >
+        <h2 class="text-center text-4xl font-semibold w-fit">
+          Descubre la Biodiversidad de Chihuahua
+        </h2>
+        <p>
+          Chihuahua, hogar de una rica diversidad de flora y fauna, enfrenta
+          retos críticos que amenazan su ecosistema. Con especies emblemáticas
+          en peligro de extinción y un aumento alarmante de incendios
+          forestales, es vital unir esfuerzos para proteger nuestra herencia
+          natural. ¡Únete a la causa y sé parte del cambio!
+        </p>
+        <button
+          class="px-5 py-2 rounded-lg bg-pink-accent-4 text-white transition<-colors hover:bg-pink-accent-2"
+        >
+          <a href="#ecosistemas">Explora la Biodiversidad</a>
+        </button>
+      </div>
+      <div class="w-full h-full flex flex-1 justify-center items-center">
+        <img
+          src="/logo.webp"
+          alt="coyote"
+          class="w-9/12 aspect-square rounded-lg"
+        />
+      </div>
+    </section>
+    <section
+      id="ecosistemas"
+      class="w-full md:min-h-[100svh] px-24 py-12 flex flex-col gap-12"
+    >
+      <h1 class="text-3xl font-semibold text-center">
+        Ecosistemas principales en Chihuahua
+      </h1>
+      <article class="flex flex-col gap-2">
+        <h2 class="text-xl font-semibold">Desierto Chihuahuense</h2>
+        <p>
+          El Desierto de Chihuahua tiene una extensión de más de 450,000 km² y
+          se distingue como el desierto más grande de Norteamérica, con
+          dimensiones aproximadas de 1,280 km de largo por 400 km de ancho. La
+          mayor extensión del desierto se localiza en territorio mexicano y
+          comprende regiones de los estados de San Luis Potosí, Zacatecas,
+          Coahuila, Durango y Chihuahua, extendiendo sus fronteras hacia los
+          Estados Unidos con el sureste de los estados de Arizona, Nuevo México
+          y con el sur de Texas.
+        </p>
+        <p>
+          Dos grandes cordilleras de montañas, la Sierra Madre Occidental por el
+          oeste y la Sierra Madre Oriental por el este, bordean los límites del
+          Desierto de Chihuahua. La presencia de estas montañas evita que las
+          corrientes húmedas del Golfo de México y del Océano Pacífico
+          precipiten en forma de lluvia, siendo esta la causa principal de la
+          existencia de condiciones desérticas en la zona.
+        </p>
+        <p>
+          La elevación mínima del territorio del desierto se ubica a 300 m,
+          aunque la mayor parte de su extensión se encuentra entre los 1,000 y
+          1,500 m de altura. Las temperaturas pueden ser extremas, con valores
+          promedio de 13 °C en enero y de 36 °C en junio, pudiendo alcanzar los
+          50 °C en los días más calientes del año. La precipitación pluvial
+          anual es menor de 350 mm, con 8 a 12 meses secos y con lluvias
+          ocasionales durante los meses de enero, febrero, julio, agosto y
+          septiembre (Desierto de Chihuahua | Candelilla Institute, 2024).
+        </p>
+      </article>
+      <article class="flex flex-col gap-2">
+        <h2 class="text-xl font-semibold">Zonas Montañosas</h2>
+        <p>
+          Chihuahua, gracias a su diversidad geográfica, alberga una amplia
+          variedad de biomas, desde desiertos áridos hasta selvas altas. Sin
+          embargo, la degradación de los ecosistemas ha aumentado en las últimas
+          décadas debido a la erosión, la tala indiscriminada y la
+          contaminación.
+        </p>
+        <div class="mt-5 flex flex-1 flex-row gap-5">
+          <div
+            class="px-4 py-2 flex flex-col gap-2 justify-around items-center h-56 min-h-fit bg-yellow-sticky-note"
+          >
+            <h3 class="text-lg font-semibold text-center self-center">
+              Reserva de la Biosfera Mapimí
+            </h3>
+            <p>
+              Decretada en 1979, abarca 20,000 ha en Chihuahua, Durango y
+              Coahuila. Este ecosistema desértico es hogar de especies endémicas
+              y en peligro de extinción, con un clima árido y precipitaciones
+              escasas.
+            </p>
+          </div>
+          <div
+            class="px-4 py-2 flex flex-col gap-2 justify-around items-start h-56 min-h-fit border bg-blue-sticky-note"
+          >
+            <h3 class="text-lg font-semibold text-center self-center">
+              Área de Protección de Flora y Fauna Cañón de Santa Elena
+            </h3>
+            <p>
+              Establecida en 1994, cubre 277,209 ha en el noreste del estado.
+              Comprende matorrales desérticos y bosques de pino-encino, con
+              condiciones climáticas extremas y un gradiente altitudinal
+              significativo.
+            </p>
+          </div>
+          <div
+            class="px-4 py-2 flex flex-col gap-2 justify-around items-start h-56 min-h-fit border bg-green-sticky-note"
+          >
+            <h3 class="text-lg font-semibold text-center self-center">
+              Parque Nacional Cascada de Basaseachi
+            </h3>
+            <p>
+              Decretado en 1981, este parque de 5,803 ha se encuentra en la
+              Sierra Madre Occidental. Alberga bosques templados y la cascada
+              más alta de México, con un clima templado subhúmedo.
+            </p>
+          </div>
+          <div
+            class="px-4 py-2 flex flex-col gap-2 justify-around items-start h-56 min-h-fit border bg-pink-sticky-note"
+          >
+            <h3 class="text-l g font-semibold text-center self-center">
+              Parque Nacional Cumbres de Majalca
+            </h3>
+            <p>
+              Establecido en 1939, con 4,772 ha, este parque ofrece vistas
+              impresionantes y una rica biodiversidad. Su geografía montañosa
+              presenta formaciones rocosas únicas y un clima semiseco templado.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="flex flex-col gap-2">
+        <h2 class="text-xl font-semibold">Pastizales y Matorrales</h2>
+        <p>
+          El pastizal natural es un ecosistema compuesto por plantas herbáceas
+          de tipo graminiforme, que proporciona un hábitat adecuado para los
+          animales herbívoros domésticos, los cuales son fundamentales para el
+          consumo humano.
+        </p>
+        <p>
+          Este ecosistema ofrece varias ventajas, como:
+          <ul class="list-disc list-inside">
+            <li class="list-item">Alimentación Económica</li>
+            <li class="list-item">Capacidad de Recuperación</li>
+            <li class="list-item">Conservación de la Biodiversidad</li>
+          </ul>
+        </p>
+        <h3 class="text-lg font-semibold">Distribución en Chihuahua</h3>
+        <p>
+          En Chihuahua, el pastizal natural ocupa extensas áreas en las
+          provincias fisiográficas de la Sierra Madre Occidental y de las
+          Sierras y Llanuras del Norte. Se encuentra en diversas condiciones
+          ecológicas y es una de las zonas de praderas naturales más importantes
+          del país.
+
+          <ul class="list-disc list-inside">
+            <li class="list-item">
+              <span class="font-medium">Sierra Madre Occidental</span>: Se extiende por gran parte del pie de monte de la vertiente interior.
+            </li>
+            <li class="list-item">
+              <span class="font-medium">Sierras y Llanuras del Norte</span>: Predomina en llanuras aluviales, lomeríos, mesetas y laderas bajas de sierras.
+            </li>
+          </ul>
+        </p>
+      </article>
+    </section>
+  </main>
 </Layout>
+
+<script is:inline>
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      const targetId = this.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  });
+</script>
