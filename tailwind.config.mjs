@@ -1,10 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{html,js,jsx,md,mdx,svelte,ts,tsx,vue,astro}'],
+	content: ['./src/**/*.{html,js,jsx,md,mdx,svelte,ts,tsx,vue,astro}','./node_modules/flowbite/**/*.js'],
 	theme: {
 		extend: {
 			fontFamily: {
 				'roboto': ['Roboto', 'sans-serif'],
+				'sans': ['Parkinsans', 'sans-serif'],
 			},
 			colors: {
 				'orange-accent-1': '#DD8938',
@@ -22,5 +23,5 @@ export default {
 			}
 		},
 	},
-	plugins: [],
+	plugins: ['flowbite/plugin'],
 }
