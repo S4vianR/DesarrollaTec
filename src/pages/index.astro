@@ -6,10 +6,10 @@ import Footer from "../components/Footer.astro";
 
 <Layout title="DesarrollaTec | Inicio.">
   <!-- <Nav /> -->
-  <Nav />
+  
 
   <section class="font-sans h-[70vh] bg-[center_1%] bg-cover bg-no-repeat 
-  flex items-center pl-6 md:pl-48 pt-10 md:pt-60 justify-start relative" 
+  flex items-center pl-6 md:pl-48 pt-10 md:pt-60 justify-start relative " 
   style="background-image: url('/fondo.webp');">
     <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-[40%] lg:w-[20%] relative z-10">
       <!-- Parte superior verde -->
@@ -20,13 +20,14 @@ import Footer from "../components/Footer.astro";
       <!-- Contenido blanco -->
       <div class="p-6 text-center">
         <p class="text-gray-700 mt-4 text-sm md:text-base">
-          Conoce la biodiversidad de Chihuahua, México.
+          Chihuahua es un estado de México con una gran riqueza natural y cultural.
         </p>
         <!-- Imagen -->
         <div class="mt-6">
-          <img src="/imagen1.webp" alt="Biodiversidad" class="rounded-lg shadow-md w-full h-32 md:h-48 object-cover">
+          <img src="/cascada.jpg" alt="Biodiversidad" class="rounded-lg shadow-md w-full h-32 md:h-48 object-cover">
           <p class="mt-4 text-gray-600 text-sm md:text-base">
-            Chihuahua alberga una rica diversidad de flora y fauna, incluyendo ecosistemas únicos como el desierto y la Sierra Tarahumara.
+            Alberga una rica diversidad de flora y fauna, 
+            incluyendo ecosistemas únicos como el desierto y la Sierra Tarahumara.
           </p>
         </div>
       </div>
@@ -34,7 +35,7 @@ import Footer from "../components/Footer.astro";
       <!-- Parte inferior integrada -->
       <div class="bg-teal-600 text-white rounded-b-lg p-4 text-center">
         <p class="text-sm md:text-base font-semibold">
-          Información adicional o llamada a la acción.
+          Explora la biodiversidad de Chihuahua
         </p>
       </div>
     </div>
@@ -43,7 +44,7 @@ import Footer from "../components/Footer.astro";
   
   
    <!-- Sección con dos columnas y cards -->
-<section class="bg-yellow-50 py-10 font-sans">
+<section class="bg-[#E8FFE9] py-10 font-sans">
   <div class="container mx-auto">
     <h2 class="text-3xl font-bold text-center mb-6">Actividades</h2>
     
@@ -52,10 +53,10 @@ import Footer from "../components/Footer.astro";
       <!-- Columna izquierda con card centrada abajo -->
       <div class="flex justify-center items-end">
         <div class="bg-white rounded-lg shadow-lg p-6 w-[90%] md:w-[70%]">
-          <img src="/imagen1.webp" alt="Actividad 1" class="rounded-lg mb-4 object-cover h-48 w-full">
-          <h3 class="text-xl font-semibold">Actividad Principal</h3>
+          <img src="/marcador.webp" alt="Actividad 1" class="rounded-lg mb-4 object-cover h-48 w-full">
+          <h3 class="text-xl font-semibold">Mapa de la Biodiversidad</h3>
           <p class="text-gray-600 mt-4">
-            Explora esta actividad destacada y disfruta de su contenido único.
+            Explora la biodiversidad de Chihuahua con nuestro mapa interactivo.
           </p>
         </div>
       </div>
@@ -64,41 +65,46 @@ import Footer from "../components/Footer.astro";
       <div class="grid grid-cols-2 gap-4">
         <!-- Card 1 -->
         <div class="bg-white rounded-lg shadow-lg">
+          <a href="/galeria" class="font-semibold">
           <img src="/imagen1.webp" alt="Actividad 2" class="rounded-t-lg object-cover h-32 w-full">
           <div class="p-4">
-            <h3 class="text-lg font-semibold">Actividad 2</h3>
+             
+            <h3 class="text-lg font-semibold">Galería de Fotos</h3>
             <p class="text-gray-600 text-sm">
-              Detalles de esta actividad interesante y dinámica.
+              Descubre la belleza natural de Chihuahua en nuestra galería.
+              
             </p>
+
           </div>
+        </a>
         </div>
         <!-- Card 2 -->
         <div class="bg-white rounded-lg shadow-lg">
-          <img src="/imagen1.webp" alt="Actividad 3" class="rounded-t-lg object-cover h-32 w-full">
+          <img src="/flora.jpg" alt="Actividad 3" class="rounded-t-lg object-cover h-32 w-full">
           <div class="p-4">
-            <h3 class="text-lg font-semibold">Actividad 3</h3>
+            <h3 class="text-lg font-semibold">Información de Especies</h3>
             <p class="text-gray-600 text-sm">
-              Aprende algo nuevo con esta actividad emocionante.
+              Aprende sobre las especies que habitan en Chihuahua.
             </p>
           </div>
         </div>
         <!-- Card 3 -->
         <div class="bg-white rounded-lg shadow-lg">
-          <img src="/imagen1.webp" alt="Actividad 4" class="rounded-t-lg object-cover h-32 w-full">
+          <img src="/leyenda.webp" alt="Actividad 4" class="rounded-t-lg object-cover h-32 w-full">
           <div class="p-4">
-            <h3 class="text-lg font-semibold">Actividad 4</h3>
+            <h3 class="text-lg font-semibold">Cuentos y Leyendas</h3>
             <p class="text-gray-600 text-sm">
-              Experimenta una aventura única y educativa.
+              Descubre las historias y mitos de la región.
             </p>
           </div>
         </div>
         <!-- Card 4 -->
         <div class="bg-white rounded-lg shadow-lg">
-          <img src="/imagen1.webp" alt="Actividad 5" class="rounded-t-lg object-cover h-32 w-full">
+          <img src="/peligro.jpeg" alt="Actividad 5" class="rounded-t-lg object-cover h-32 w-full">
           <div class="p-4">
-            <h3 class="text-lg font-semibold">Actividad 5</h3>
+            <h3 class="text-lg font-semibold">Biodiversidad en Peligro</h3>
             <p class="text-gray-600 text-sm">
-              Explora nuevas oportunidades con esta actividad.
+              Conoce las especies en riesgo y cómo puedes ayudar.
             </p>
           </div>
         </div>
@@ -109,7 +115,7 @@ import Footer from "../components/Footer.astro";
 
 
 <!-- seccion pareceida a la de arriba pero con solo una columna y con 4 cards que ahora si toman todo el ancho -->
-<section class="bg-yellow-50 py-10 font-sans">
+<section class="bg-[#E8FFE9] py-10 font-sans">
   <div class="container mx-auto">
     
     <!-- Contenedor de dos columnas -->
@@ -118,42 +124,42 @@ import Footer from "../components/Footer.astro";
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Card 1 -->
         <div class="bg-white rounded-lg shadow-lg">
-          <img src="/imagen1.webp" alt="Actividad 2" class="rounded-t-lg object-cover h-32 w-full">
+          <img src="/articulo.png" alt="Actividad 2" class="rounded-t-lg object-cover h-32 w-full">
           <div class="p-4">
-            <h3 class="text-lg font-semibold">Actividad 2</h3>
+            <h3 class="text-lg font-semibold">Artículos de Interés</h3>
             <p class="text-gray-600 text-sm">
-              Detalles de esta actividad interesante y dinámica.
+              Lee nuestros artículos destacado sobre la biodiversidad de Chihuahua.
             </p>
           </div>
         </div>
         <!-- Card 2 -->
         <div class="bg-white rounded-lg shadow-lg">
-          <img src="/imagen1.webp" alt="Actividad 3" class="rounded-t-lg object-cover h-32 w-full">
+          <img src="/quiz.jpg" alt="Actividad 3" class="rounded-t-lg object-cover h-32 w-full">
           <div class="p-4">
-            <h3 class="text-lg font-semibold">Actividad 3</h3>
+            <h3 class="text-lg font-semibold">Quiz de Biodiversidad</h3>
             <p class="text-gray-600 text-sm">
-              Aprende algo nuevo con esta actividad emocionante.
+              Pon a prueba tus conocimientos con nuestro quiz interactivo.
             </p>
           </div>
         </div>
         <!-- Card 3 -->
         <div class="bg-white rounded-lg shadow-lg">
-          <img src="/imagen1.webp" alt="Actividad 4" class="rounded-t-lg object-cover h-32 w-full">
+          <img src="/lecturas.png" alt="Actividad 4" class="rounded-t-lg object-cover h-32 w-full">
           <div class="p-4">
-            <h3 class="text-lg font-semibold">Actividad 4</h3>
+            <h3 class="text-lg font-semibold">Lectura Recomendada</h3>
             <p class="text-gray-600 text-sm">
-              Experimenta una aventura única y educativa.
+              Descubre libros y recursos para aprender más sobre la biodiversidad.
             </p>
           </div>
         </div>
         <!-- Card 4 -->
         <div class="bg-white rounded-lg shadow-lg">
-          <img src="/imagen1.webp" alt="Actividad 5" class="rounded-t-lg object-cover h-32 w-full">
+          <img src="/sabiasque.jpg" alt="Actividad 5" class="rounded-t-lg object-cover h-32 w-full">
           <div class="p-4">
             
-            <h3 class="text-lg font-semibold">Actividad 5</h3>
+            <h3 class="text-lg font-semibold">Sabías que...</h3>
             <p class="text-gray-600 text-sm">
-              Explora nuevas oportunidades con esta actividad.
+              Sección de curiosidades y datos interesantes sobre la biodiversidad.
             </p>
           </div>
         </div>
