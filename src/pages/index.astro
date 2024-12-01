@@ -6,32 +6,40 @@ import Footer from "../components/Footer.astro";
 
 <Layout title="DesarrollaTec | Inicio.">
   <!-- <Nav /> -->
-  
 
-  <section class="font-sans h-[70vh] bg-[center_1%] bg-cover bg-no-repeat 
-  flex items-center pl-6 md:pl-48 pt-10 md:pt-60 justify-start relative " 
-  style="background-image: url('/fondo.webp');">
-    <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-[40%] lg:w-[20%] relative z-10">
+  <section
+    class="font-sans h-[70vh] bg-[center_1%] bg-cover bg-no-repeat
+  flex items-center pl-6 md:pl-48 pt-10 md:pt-60 justify-start relative"
+    style="background-image: url('/fondo.webp');"
+  >
+    <div
+      class="bg-white rounded-lg shadow-lg w-[90%] md:w-[40%] lg:w-[20%] relative z-10"
+    >
       <!-- Parte superior verde -->
       <div class="bg-green-800 text-white rounded-t-lg p-4 text-center">
         <h1 class="text-2xl md:text-4xl font-bold">Chihuahua, México</h1>
       </div>
-  
+
       <!-- Contenido blanco -->
       <div class="p-6 text-center">
         <p class="text-gray-700 mt-4 text-sm md:text-base">
-          Chihuahua es un estado de México con una gran riqueza natural y cultural.
+          Chihuahua es un estado de México con una gran riqueza natural y
+          cultural.
         </p>
         <!-- Imagen -->
         <div class="mt-6">
-          <img src="/cascada.jpg" alt="Biodiversidad" class="rounded-lg shadow-md w-full h-32 md:h-48 object-cover">
+          <img
+            src="/cascada.jpg"
+            alt="Biodiversidad"
+            class="rounded-lg shadow-md w-full h-32 md:h-48 object-cover"
+          />
           <p class="mt-4 text-gray-600 text-sm md:text-base">
-            Alberga una rica diversidad de flora y fauna, 
-            incluyendo ecosistemas únicos como el desierto y la Sierra Tarahumara.
+            Alberga una rica diversidad de flora y fauna, incluyendo ecosistemas
+            únicos como el desierto y la Sierra Tarahumara.
           </p>
         </div>
       </div>
-  
+
       <!-- Parte inferior integrada -->
       <div class="bg-teal-600 text-white rounded-b-lg p-4 text-center">
         <p class="text-sm md:text-base font-semibold">
@@ -40,171 +48,201 @@ import Footer from "../components/Footer.astro";
       </div>
     </div>
   </section>
-  
-  
-  
-   <!-- Sección con dos columnas y cards -->
-<section class="bg-[#E8FFE9] py-10 font-sans">
-  <div class="container mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-6">Actividades</h2>
-    
-    <!-- Contenedor de dos columnas -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <!-- Columna izquierda con card centrada abajo -->
-      <div class="flex justify-center items-center">
-        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out w-[90%] md:w-[60%] lg:w-[70%]">
-          <a href="/mapa" class="block text-center">
-            <img src="/marcador.webp" alt="Mapa de la Biodiversidad" class="rounded-t-lg object-cover h-64 w-full">
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold text-gray-800">Mapa de la Biodiversidad</h3>
-              <p class="text-gray-600 text-base mt-4">
-                Explora la biodiversidad de Chihuahua con nuestro mapa interactivo.
-              </p>
-            </div>
-          </a>
-        </div>
-      </div>
-      
 
-      <!-- Columna derecha con 4 cards -->
-      <div class="grid grid-cols-2 gap-4">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out">
-          <a href="/galeria" class="font-semibold">
-          <img src="/imagen1.webp" alt="Actividad 2" class="rounded-t-lg object-cover h-32 w-full">
-          <div class="p-4">
-             
-            <h3 class="text-lg font-semibold">Galería de Fotos</h3>
-            <p class="text-gray-600 text-sm">
-              Descubre la belleza natural de Chihuahua en nuestra galería.
-              
-            </p>
+  <!-- Sección con dos columnas y cards -->
+  <section class="bg-[#E8FFE9] py-10 font-sans">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6">Actividades</h2>
 
+      <!-- Contenedor de dos columnas -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Columna izquierda con card centrada abajo -->
+        <div class="flex justify-center items-center">
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out w-[90%] md:w-[60%] lg:w-[70%]"
+          >
+            <a href="/mapa" class="block text-center">
+              <img
+                src="/marcador.webp"
+                alt="Mapa de la Biodiversidad"
+                class="rounded-t-lg object-cover h-64 w-full"
+              />
+              <div class="p-6">
+                <h3 class="text-2xl font-semibold text-gray-800">
+                  Mapa de la Biodiversidad
+                </h3>
+                <p class="text-gray-600 text-base mt-4">
+                  Explora la biodiversidad de Chihuahua con nuestro mapa
+                  interactivo.
+                </p>
+              </div>
+            </a>
           </div>
-        </a>
-        </div>
-        <!-- Card 2 -->
-        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out">
-          <a href="/especies" class="font-semibold">
-          <img src="/flora.jpg" alt="Actividad 3" class="rounded-t-lg object-cover h-32 w-full">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">Información de Especies</h3>
-            <p class="text-gray-600 text-sm">
-              Aprende sobre las especies que habitan en Chihuahua.
-            </p>
-          </div>
-          </a>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out">
-          <a href="/leyendas" class="font-semibold">
-          <img src="/leyenda.webp" alt="Actividad 4" class="rounded-t-lg object-cover h-32 w-full">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">Cuentos y Leyendas</h3>
-            <p class="text-gray-600 text-sm">
-              Descubre las historias y mitos de la región.
-            </p>
-          </div>
-          </a>
-        </div>
-        <!-- Card 4 -->
-        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out">
-          <a href="/peligro" class="font-semibold">
-          <img src="/peligro.jpeg" alt="Actividad 5" class="rounded-t-lg object-cover h-32 w-full">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">Biodiversidad en Peligro</h3>
-            <p class="text-gray-600 text-sm">
-              Conoce las especies en riesgo y cómo puedes ayudar.
-            </p>
-          </div>
-          </a>
-        </div>
-      
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- seccion pareceida a la de arriba pero con solo una columna y con 4 cards que ahora si toman todo el ancho -->
-<section class="bg-[#E8FFE9] py-10 font-sans">
-  <div class="container mx-auto">
-    
-    <!-- Contenedor de dos columnas -->
-    <div class="grid grid-cols-1 gap-8">
-      <!-- Columna izquierda con card centrada abajo -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out">
-          <a href="/articulos" class="font-semibold">
-          <img src="/articulo.png" alt="Actividad 2" class="rounded-t-lg object-cover h-32 w-full">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">Artículos de Interés</h3>
-            <p class="text-gray-600 text-sm">
-              Lee nuestros artículos destacado sobre la biodiversidad de Chihuahua.
-            </p>
-          </div>
-          </a>
-        </div>
-        <!-- Card 2 -->
-        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out">
-          <a href="/quiz" class="font-semibold">
-          <img src="/quiz.jpg" alt="Actividad 3" class="rounded-t-lg object-cover h-32 w-full">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">Quiz de Biodiversidad</h3>
-            <p class="text-gray-600 text-sm">
-              Pon a prueba tus conocimientos con nuestro quiz interactivo.
-            </p>
-          </div>
-          </a>
-        </div>
-        <!-- Card 3 -->
-        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out">
-          <a href="/lecturas" class="font-semibold">
-          <img src="/lecturas.png" alt="Actividad 4" class="rounded-t-lg object-cover h-32 w-full">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold">Lectura Recomendada</h3>
-            <p class="text-gray-600 text-sm">
-              Descubre libros y recursos para aprender más sobre la biodiversidad.
-            </p>
-          </div>
-          </a>
-        </div>
-        <!-- Card 4 -->
-        <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out">
-          <a href="/sabiasque" class="font-semibold">
-          <img src="/sabiasque.jpg" alt="Actividad 5" class="rounded-t-lg object-cover h-32 w-full">
-          <div class="p-4">
-            
-            <h3 class="text-lg font-semibold">Sabías que...</h3>
-            <p class="text-gray-600 text-sm">
-              Sección de curiosidades y datos interesantes sobre la biodiversidad.
-            </p>
-          </div>
-          </a>
         </div>
 
+        <!-- Columna derecha con 4 cards -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <a href="/galeria" class="font-semibold">
+              <img
+                src="/imagen1.webp"
+                alt="Actividad 2"
+                class="rounded-t-lg object-cover h-32 w-full"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Galería de Fotos</h3>
+                <p class="text-gray-600 text-sm">
+                  Descubre la belleza natural de Chihuahua en nuestra galería.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <a href="/especies" class="font-semibold">
+              <img
+                src="/flora.jpg"
+                alt="Actividad 3"
+                class="rounded-t-lg object-cover h-32 w-full"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Información de Especies</h3>
+                <p class="text-gray-600 text-sm">
+                  Aprende sobre las especies que habitan en Chihuahua.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <a href="/leyendas" class="font-semibold">
+              <img
+                src="/leyenda.webp"
+                alt="Actividad 4"
+                class="rounded-t-lg object-cover h-32 w-full"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Cuentos y Leyendas</h3>
+                <p class="text-gray-600 text-sm">
+                  Descubre las historias y mitos de la región.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <a href="/peligro" class="font-semibold">
+              <img
+                src="/peligro.jpeg"
+                alt="Actividad 5"
+                class="rounded-t-lg object-cover h-32 w-full"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Biodiversidad en Peligro</h3>
+                <p class="text-gray-600 text-sm">
+                  Conoce las especies en riesgo y cómo puedes ayudar.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  
+  <!-- seccion pareceida a la de arriba pero con solo una columna y con 4 cards que ahora si toman todo el ancho -->
+  <section class="bg-[#E8FFE9] py-10 font-sans">
+    <div class="container mx-auto">
+      <!-- Contenedor de dos columnas -->
+      <div class="grid grid-cols-1 gap-8">
+        <!-- Columna izquierda con card centrada abajo -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <a href="/articulos" class="font-semibold">
+              <img
+                src="/articulo.png"
+                alt="Actividad 2"
+                class="rounded-t-lg object-cover h-32 w-full"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Artículos de Interés</h3>
+                <p class="text-gray-600 text-sm">
+                  Lee nuestros artículos destacado sobre la biodiversidad de
+                  Chihuahua.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <a href="/quiz" class="font-semibold">
+              <img
+                src="/quiz.jpg"
+                alt="Actividad 3"
+                class="rounded-t-lg object-cover h-32 w-full"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Quiz de Biodiversidad</h3>
+                <p class="text-gray-600 text-sm">
+                  Pon a prueba tus conocimientos con nuestro quiz interactivo.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <a href="/lecturas" class="font-semibold">
+              <img
+                src="/lecturas.png"
+                alt="Actividad 4"
+                class="rounded-t-lg object-cover h-32 w-full"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Lectura Recomendada</h3>
+                <p class="text-gray-600 text-sm">
+                  Descubre libros y recursos para aprender más sobre la
+                  biodiversidad.
+                </p>
+              </div>
+            </a>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            <a href="/sabiasque" class="font-semibold">
+              <img
+                src="/sabiasque.jpg"
+                alt="Actividad 5"
+                class="rounded-t-lg object-cover h-32 w-full"
+              />
+              <div class="p-4">
+                <h3 class="text-lg font-semibold">Sabías que...</h3>
+                <p class="text-gray-600 text-sm">
+                  Sección de curiosidades y datos interesantes sobre la
+                  biodiversidad.
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </Layout>
-
-<script is:inline>
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-
-      const targetId = this.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-
-      targetElement.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    });
-  });
-</script>
