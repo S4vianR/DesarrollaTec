@@ -1,0 +1,163 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Cuentos | DesarrollaTec">
+  <section class="bg-[#E8FFE9] py-50 grid content-center justify-center pt-40">
+    
+    
+
+
+  <!-- Book -->
+  <div id="book" class="book"
+  >
+      <!-- Paper 1 -->
+      <div id="p1" class="paper">
+          <div class="front">
+              <div id="f1"  class="front-content">
+                  <h1>Cuentos</h1>
+              </div>
+          </div>
+          <div class="back">
+              <div id="b1" class="back-content">
+                  <h1>Back 1</h1>
+              </div>
+          </div>
+      </div>
+      <!-- Paper 2 -->
+      <div id="p2" class="paper">
+          <div class="front">
+              <div id="f2" class="front-content">
+                  <h1>Front 2</h1>
+              </div>
+          </div>
+          <div class="back">
+              <div id="b2" class="back-content">
+                  <h1>Back 2</h1>
+              </div>
+          </div>
+      </div>
+      <!-- Paper 3 -->
+      <div id="p3" class="paper">
+          <div class="front">
+              <div id="f3" class="front-content">
+                  <h1>Front 3</h1>
+              </div>
+          </div>
+          <div class="back">
+              <div id="b3" class="back-content">
+                  <h1>Back 3</h1>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="flex justify-center items-center p-6 gap-4">
+  
+    
+    <!-- Previous Button -->
+    <button id="prev-btn" class="bg-green-500 w-10 h-10 rounded-full flex items-center justify-center">
+     <svg class="text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+     </svg>
+  </button>
+  
+     <!-- Next Button -->
+     <button id="next-btn" class="bg-green-500 w-10 h-10 z-30 rounded-full
+     flex items-center justify-center 
+     ">
+         <svg class="justify-center text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+         </svg>
+     </button>
+     
+ 
+    </div>
+ 
+
+  
+  </section>
+
+
+</Layout>
+
+<style>
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+}
+
+
+/* Book */
+.book {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s;
+}
+
+
+
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+
+/* Paper stack order */
+#p1 {
+    z-index: 3;
+}
+
+#p2 {
+    z-index: 2;
+}
+
+#p3 {
+    z-index: 1;
+}
+</style>
+
+<!-- script que esta en carpeta js una carptea arriba -->
+<script src="../js/turn.js" defer></script>
