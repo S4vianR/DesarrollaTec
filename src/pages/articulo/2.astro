@@ -1,0 +1,127 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Artículos 1 | DesarrollaTec">
+  <section
+    class="text-gray-800 bg-[#c2e4d3] p-5 flex flex-col justify-center items-center"
+  >
+    <div
+      class="mt-24 container mx-auto w-7/12 px-5 flex flex-col justify-center items-center gap-5"
+    >
+      <h1 class="text-4xl font-bold text-center">
+        Sotol: Tradición y Sostenibilidad en Chihuahua
+      </h1>
+      <p class="text-justify">
+        El sotol es más que una bebida; es un símbolo de la cultura
+        chihuahuense. Este artículo explora su historia, proceso de producción y
+        su papel en la sostenibilidad ambiental.
+      </p>
+      <ul
+        class="p-6 w-full flex flex-col items-center justify-center gap-6 bg-green-100"
+      >
+        <li class="w-full flex flex-col items-center justify-center gap-2">
+          <h3 class="text-2xl font-bold text-center">Historia del Sotol</h3>
+          <div class="flex flex-row items-center justify-center gap-4">
+            <img
+              src="/sotolBotella.webp"
+              alt="Imagen alusiva a la botella de sotol"
+              class="w-4/12"
+            />
+            <p class="text-justify">
+              El sotol tiene raíces profundas en la cultura indígena de
+              Chihuahua, donde ha sido utilizado durante siglos. Su producción
+              se remonta a más de 800 años, y ha sido parte de ceremonias y
+              tradiciones locales.
+            </p>
+          </div>
+        </li>
+        <li class="w-full flex flex-col items-center justify-center gap-2">
+          <h3 class="text-2xl font-bold text-center">Proceso de Producción</h3>
+          <div class="flex flex-row items-center justify-center gap-4">
+            <p class="text-justify">
+              La producción del sotol comienza con la recolección de la planta,
+              que se realiza de manera sostenible para no afectar el ecosistema.
+              Después, las piñas se cocinan y se fermentan, seguido de un
+              proceso de destilación que da como resultado una bebida con un
+              sabor único.
+            </p>
+            <img
+              src="/procesoSotol.webp"
+              alt="Proceso de producción del sotol"
+              class="w-4/12"
+            />
+          </div>
+        </li>
+        <li class="w-full flex flex-col items-center justify-center gap-2">
+          <h3 class="text-2xl font-bold text-center">Sotol y Sostenibilidad</h3>
+          <div class="flex flex-row items-center justify-center gap-4">
+            <img src="/sotol.webp" alt="Sotol" class="w-4/12" />
+            <p class="text-justify">
+              La producción de sotol no solo preserva tradiciones, sino que
+              también promueve la conservación de la flora nativa. Al utilizar
+              recursos locales de manera responsable, se fomenta el desarrollo
+              económico de las comunidades y se protege el medio ambiente.
+            </p>
+          </div>
+        </li>
+        <li class="w-full flex flex-col items-center justify-center gap-2">
+          <h3 class="text-2xl font-bold text-center">
+            Reconocimiento y Denominación de Origen
+          </h3>
+          <div class="flex flex-row items-center justify-center gap-4">
+            <p class="text-justify">
+              Desde 2002, el sotol cuenta con Denominación de Origen, lo que
+              resalta su importancia cultural y económica. Este reconocimiento
+              ayuda a proteger la producción tradicional y a promover el turismo
+              en la región.
+            </p>
+            <img
+              src="/sotolCervantes.webp"
+              alt="Botella de sotol Cervantes"
+              class="w-4/12"
+            />
+          </div>
+        </li>
+      </ul>
+      <div class="flex flex-row justify-center items-center gap-4">
+        <a
+          href="/articulo/1"
+          class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="rgba(255,255,255,1)"
+            ><path
+              d="M13.9142 12L18.7071 7.20712L17.2929 5.79291L11.0858 12L17.2929 18.2071L18.7071 16.7929L13.9142 12ZM7 18V6.00001H9V18H7Z"
+            ></path></svg
+          ></a
+        >
+        <a
+          href="/articulos"
+          class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          >Regresar a Artículos</a
+        >
+        <a
+          href="/articulo/3"
+          class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="rgba(255,255,255,1)"
+          >
+            <path
+              d="M10.0858 12L5.29291 16.7929L6.70712 18.2071L12.9142 12L6.70712 5.79291L5.29291 7.20712L10.0858 12ZM17 6.00002L17 18H15L15 6.00002L17 6.00002Z"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
