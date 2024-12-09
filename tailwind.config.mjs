@@ -20,7 +20,16 @@ export default {
 				'blue-sticky-note': '#B6D0E2',
 				'green-sticky-note': '#A5D6A7',
 				'pink-sticky-note': '#F48FB1',
-			}
+			},
+			screens: {
+				'xs': '320px',
+				'sm': '425px',
+				'md': '768px',
+				'lg': '1024px',
+				'xl': '1280px',
+				'2xl': '1536px',
+				'3xl': '1920px',
+			},
 		},
 	},
 	plugins: ['flowbite/plugin'],

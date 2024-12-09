@@ -4,140 +4,151 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Cuentos | DesarrollaTec">
   <section class="bg-[#E8FFE9] py-50 grid content-center justify-center pt-40">
-    
-    
-
-
-  <!-- Book -->
-  <div id="book" class="book"
-  >
+    <!-- Book -->
+    <div id="book" class="book">
       <!-- Paper 1 -->
       <div id="p1" class="paper">
-          <div class="front">
-            <div class="flex flex-col justify-center items-center pt-40">
-                <img src="/public/chihuahuita.jpg" alt="Cuento 1" 
-                class="w-40 justify-center content-center h-40 object-cover"
-                >
-           
-              <!-- Leyendas de chihuahua -->
-                     <h1
-                    class="text-2xl font-bold"
-                    >Leyendas de Chihuahua</h1>
-                    
-                </div>  
+        <div class="front">
+          <div class="flex flex-col justify-center items-center pt-40">
+            <img
+              src="/public/chihuahuita.jpg"
+              alt="Cuento 1"
+              class="w-40 justify-center content-center h-40 object-cover"
+            />
 
-                
-            
+            <!-- Leyendas de chihuahua -->
+            <h1 class="text-2xl font-bold">Leyendas de Chihuahua</h1>
           </div>
-          <div class="back">
-              <div id="b1" class="back-content">
-                  <img src="/public/cerroGrande.jpg" alt="Cuento 1" class="w-full h-full object-cover">
-              </div>
+        </div>
+        <div class="back">
+          <div id="b1" class="back-content">
+            <img
+              src="/public/cerroGrande.jpg"
+              alt="Cuento 1"
+              class="w-full h-full object-cover"
+            />
           </div>
+        </div>
       </div>
       <!-- Paper 2 -->
       <div id="p2" class="paper">
-          <div class="front">
-              <div id="f2" class="front-content p-4 flex flex-col">
-                  <h1
-                  class="text-2xl font-bold"
-                  >Las minas y el otro mundo</h1>
-                  
-                  <p class="text-base mt-4">
-                    Años atrás existía en el Cerro Grande una pequeña mina de zinc. Del lugar se extrajeron considerables cantidades de zinc, pero se cuenta que esta mina fue clausurada porque a penetrar unos 200 metros al interior del cerro se encontraron un profundo voladero en el que murieron muchos hombres.
+        <div class="front">
+          <div id="f2" class="front-content p-4 flex flex-col">
+            <h1 class="text-2xl font-bold">Las minas y el otro mundo</h1>
 
-Muy variadas fueron las leyendas de esta mina pero la más popular fue la de que del otro lado del voladero existía otro mundo diferente al que muy pocos pudieron llegar. Hoy en día esta mina fue cerrada y es totalmente inaccesible.
-                  </p>
-              </div>
+            <p class="text-base mt-4">
+              Años atrás existía en el Cerro Grande una pequeña mina de zinc.
+              Del lugar se extrajeron considerables cantidades de zinc, pero se
+              cuenta que esta mina fue clausurada porque a penetrar unos 200
+              metros al interior del cerro se encontraron un profundo voladero
+              en el que murieron muchos hombres. Muy variadas fueron las
+              leyendas de esta mina pero la más popular fue la de que del otro
+              lado del voladero existía otro mundo diferente al que muy pocos
+              pudieron llegar. Hoy en día esta mina fue cerrada y es totalmente
+              inaccesible.
+            </p>
           </div>
-          <div class="back">
-              <div id="b2" class="back-content">
-                  <img src="/public/mina.jpg" alt="Cuento 2" class="w-full h-full object-cover">
-              </div>
+        </div>
+        <div class="back">
+          <div id="b2" class="back-content">
+            <img
+              src="/public/mina.jpg"
+              alt="Cuento 2"
+              class="w-full h-full object-cover"
+            />
           </div>
+        </div>
       </div>
       <!-- Paper 3 -->
       <div id="p3" class="paper">
-          <div class="front">
-              <div id="f3" class="front-content 
-                p-4 flex flex-col"
-              >
-                  <h1
-                  class="text-2xl font-bold"
-                  >Las minas de parral</h1>
-                  <p
-                  class="text-base mt-4"
-                  >
-                    Hidalgo del Parral es una ciudad localizada al sur de Chihuahua. Se cuenta que en el año 1629 un español, llamado Juan Rangel de Biezma, buscaba establecerse en América y llegó a esta localidad.
-
-La leyenda cuenta que cuando estaba explorando los alrededores, Biezma llegó al Cerro de La Cruz y tomó una piedra que allí se encontraba.
-
-Después de un momento, la lamió y declaró: ‘acá hay plata’. En efecto era correcto y se comenzó a explotar este mineral en este yacimiento (hoy en día Mina La Prieta) durante 340 años.
-                  </p>
-              </div>
+        <div class="front">
+          <div id="f3" class="front-content
+                p-4 flex flex-col">
+            <h1 class="text-2xl font-bold">Las minas de parral</h1>
+            <p class="text-base mt-4">
+              Hidalgo del Parral es una ciudad localizada al sur de Chihuahua.
+              Se cuenta que en el año 1629 un español, llamado Juan Rangel de
+              Biezma, buscaba establecerse en América y llegó a esta localidad.
+              La leyenda cuenta que cuando estaba explorando los alrededores,
+              Biezma llegó al Cerro de La Cruz y tomó una piedra que allí se
+              encontraba. Después de un momento, la lamió y declaró: ‘acá hay
+              plata’. En efecto era correcto y se comenzó a explotar este
+              mineral en este yacimiento (hoy en día Mina La Prieta) durante 340
+              años.
+            </p>
           </div>
-          <div class="back">
-              <div id="b3" class="back-content">
-                 
-              </div>
-          </div>
+        </div>
+        <div class="back">
+          <div id="b3" class="back-content"></div>
+        </div>
       </div>
-  </div>
-
-  <div class="flex justify-center items-center p-6 gap-4">
-  
-    
-    <!-- Previous Button -->
-    <button id="prev-btn" class="bg-green-500 w-10 h-10 rounded-full flex items-center justify-center">
-     <svg class="text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
-     </svg>
-  </button>
-  
-     <!-- Next Button -->
-     <button id="next-btn" class="bg-green-500 w-10 h-10 z-30 rounded-full
-     flex items-center justify-center 
-     ">
-         <svg class="justify-center text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-         </svg>
-     </button>
-     
- 
     </div>
- 
 
-  
+    <div class="flex justify-center items-center p-6 gap-4">
+      <!-- Previous Button -->
+      <button
+        id="prev-btn"
+        class="bg-green-500 w-10 h-10 rounded-full flex items-center justify-center"
+      >
+        <svg
+          class="text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"></path>
+        </svg>
+      </button>
+
+      <!-- Next Button -->
+      <button
+        id="next-btn"
+        class="bg-green-500 w-10 h-10 z-30 rounded-full
+     flex items-center justify-center"
+      >
+        <svg
+          class="justify-center text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
   </section>
-
-
 </Layout>
 
 <style>
-
-.paper {
+  .paper {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     perspective: 1500px;
+  }
 
-}
-
-
-/* Book */
-.book {
+  /* Book */
+  .book {
     position: relative;
     width: 350px;
     height: 500px;
     transition: transform 0.5s;
-}
+  }
 
-
-
-.front,
-.back {
+  .front,
+  .back {
     background-color: white;
     position: absolute;
     width: 100%;
@@ -146,49 +157,48 @@ Después de un momento, la lamió y declaró: ‘acá hay plata’. En efecto er
     left: 0;
     transform-origin: left;
     transition: transform 0.5s;
-}
+  }
 
-.front {
+  .front {
     z-index: 1;
     backface-visibility: hidden;
-}
+  }
 
-.back {
+  .back {
     z-index: 0;
-}
+  }
 
-.front-content,
-.back-content {
+  .front-content,
+  .back-content {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.back-content {
-    transform: rotateY(180deg)
-}
+  .back-content {
+    transform: rotateY(180deg);
+  }
 
-/* Paper flip effect */
-.flipped .front,
-.flipped .back {
+  /* Paper flip effect */
+  .flipped .front,
+  .flipped .back {
     transform: rotateY(-180deg);
-}
+  }
 
-
-/* Paper stack order */
-#p1 {
+  /* Paper stack order */
+  #p1 {
     z-index: 3;
-}
+  }
 
-#p2 {
+  #p2 {
     z-index: 2;
-}
+  }
 
-#p3 {
+  #p3 {
     z-index: 1;
-}
+  }
 </style>
 
 <!-- script que esta en carpeta js una carptea arriba -->
