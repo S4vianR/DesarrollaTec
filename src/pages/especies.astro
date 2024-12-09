@@ -2,94 +2,139 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Especies | DesarrollaTec">
-  <section class="bg-[#E8FFE9] py-40">
-    <div class="px-4 mx-auto max-w-screen-xl">
-      <div class="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">
-          Especies de la región
-        </h2>
-        <p class="font-light text-gray-500 sm:text-xl">
-          Conoce las especies que habitan en la región de Chihuahua
-        </p>
-      </div>
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        <!-- Imagen 1 -->
-        <article
-          class="p-4 bg-white rounded-lg border border-gray-200 shadow-md"
+<Layout title="Especies Endémicas de Chihuahua | DesarrollaTec">
+  <section class="font-sans p-10 bg-[#D9F3C4]">
+    <div class="mt-16 container mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-6">
+        Especies Endémicas de Chihuahua
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Ejemplo 1: Pino Azul -->
+        <div
+          class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
         >
-          <a href="#">
-            <img
-              class="mb-5 rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/office-laptops.png"
-              alt="office laptop working"
-            />
-          </a>
-          <span
-            class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-            >Flora</span
-          >
-          <h2 class="my-2 text-2xl font-bold tracking-tight text-gray-900">
-            <a href="#">Our new office is amazing</a>
-          </h2>
-          <p class="font-light text-gray-500">
-            Over the past year, Volosoft has undergone many changes! After
-            months of preparation and some hard work, we moved to our new
-            office.
-          </p>
-        </article>
+          <img
+            src="/pino.JPG"
+            alt="Pino Azul"
+            class="rounded-t-lg object-cover h-64 w-full"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Pino Azul (Pinus maximartinezii)
+            </h3>
+            <p class="text-gray-600 text-base mt-4">
+              El Pino Azul es una especie de árbol conífero endémico de las
+              montañas de la Sierra Madre Occidental. Este árbol, conocido por
+              su distintivo follaje azulado, juega un papel crucial en los
+              ecosistemas forestales de Chihuahua.
+            </p>
+          </div>
+        </div>
 
-        
-        <!-- Imagen 2 -->
-        <article
-          class="p-4 bg-white rounded-lg border border-gray-200 shadow-md"
+        <!-- Ejemplo 2: Guacamaya Verde -->
+        <div
+          class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
         >
-          <a href="#">
-            <img
-              class="mb-5 rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/google-hq.png"
-              alt="Google HQ"
-            />
-          </a>
-          <span
-            class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-            >Article</span
-          >
-          <h2 class="my-2 text-2xl font-bold tracking-tight text-gray-900">
-            <a href="#">We partnered up with Google</a>
-          </h2>
-          <p class="mb-4 font-light text-gray-500">
-            Over the past year, Volosoft has undergone many changes! After
-            months of preparation and some hard work, we moved to our new
-            office.
-          </p>
-        </article>
+          <img
+            src="/guacamaya.jpg"
+            alt="Guacamaya Verde"
+            class="rounded-t-lg object-cover h-64 w-full"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Guacamaya Verde
+            </h3>
+            <p class="text-gray-600 text-base mt-4">
+              Esta ave endémica de Chihuahua destaca por sus brillantes plumas
+              verdes y su importante rol en la dispersión de semillas. Su hábitat
+              natural son los bosques templados y subtropicales.
+            </p>
+          </div>
+        </div>
 
-
-        <!-- Imagen 3 -->
-        <article
-          class="p-4 bg-white rounded-lg border border-gray-200 shadow-md"
+        <!-- Ejemplo 3: Biznaga Barril de Chihuahua -->
+        <div
+          class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
         >
-          <a href="#">
-            <img
-              class="mb-5 rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/blog/office-laptops-2.png"
-              alt="office laptops"
-            />
-          </a>
-          <span
-            class="bg-purple-100 text-purple-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded"
-            >Article</span
-          >
-          <h2 class="my-2 text-2xl font-bold tracking-tight text-gray-900">
-            <a href="#">Our first project with React</a>
-          </h2>
-          <p class="mb-4 font-light text-gray-500">
-            Over the past year, Volosoft has undergone many changes! After
-            months of preparation and some hard work, we moved to our new
-            office.
-          </p>
-        </article>
+          <img
+            src="/biznaga.JPG"
+            alt="Biznaga Barril de Chihuahua"
+            class="rounded-t-lg object-cover h-64 w-full"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Biznaga Barril (Ferocactus pilosus)
+            </h3>
+            <p class="text-gray-600 text-base mt-4">
+              Este cactus endémico del Desierto Chihuahuense es conocido por su
+              forma redondeada y flores vibrantes. Es una especie clave en el
+              ecosistema, proporcionando alimento y refugio a diversas especies.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ejemplo 4: Zorro de Chihuahua -->
+        <div
+          class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+        >
+          <img
+            src="/zorro.jpg"
+            alt="Zorro de Chihuahua"
+            class="rounded-t-lg object-cover h-64 w-full"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Zorro de Chihuahua (Vulpes macrotis)
+            </h3>
+            <p class="text-gray-600 text-base mt-4">
+              Este pequeño mamífero es endémico de las zonas áridas del estado.
+              Adaptado al Desierto Chihuahuense, el zorro es conocido por su
+              capacidad para sobrevivir en condiciones extremas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ejemplo 5: Sotol -->
+        <div
+          class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+        >
+          <img
+            src="/sotol.webp"
+            alt="Sotol"
+            class="rounded-t-lg object-cover h-64 w-full"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Sotol (Dasylirion wheeleri)
+            </h3>
+            <p class="text-gray-600 text-base mt-4">
+              Planta endémica del norte de México, el sotol es un icono del
+              Desierto Chihuahuense. Sus hojas largas y afiladas se utilizan en
+              la elaboración de artesanías y bebidas tradicionales.
+            </p>
+          </div>
+        </div>
+
+        <!-- Ejemplo 6: Cacomixtle -->
+        <div
+          class="bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+        >
+          <img
+            src="/cacomixtle.jpg"
+            alt="Cacomixtle"
+            class="rounded-t-lg object-cover h-64 w-full"
+          />
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-gray-800">
+              Cacomixtle (Bassariscus astutus)
+            </h3>
+            <p class="text-gray-600 text-base mt-4">
+              Este pequeño mamífero, parecido a un mapache, es endémico de los
+              bosques y cañones de Chihuahua. Es una especie nocturna y juega un
+              rol importante como dispersor de semillas.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
