@@ -76,19 +76,19 @@
                 </p>
                 <div class="flex justify-start items-center gap-1">
                     <input type="radio" id="respuesta1Pregunta3" name="respuestaPregunta3" value="A">
-                    <label class="cursor-pointer" for="respuesta1Pregunta3">A) Venado cola blanca</label>
+                    <label class="cursor-pointer" for="respuesta1Pregunta3">A) Pino</label>
                 </div>
                 <div class="flex justify-start items-center gap-1">
                     <input type="radio" id="respuesta2Pregunta3" name="respuestaPregunta3" value="B">
-                    <label class="cursor-pointer" for="respuesta2Pregunta3">B) Lobo gris</label>
+                    <label class="cursor-pointer" for="respuesta2Pregunta3">B) Sotol</label>
                 </div>
                 <div class="flex justify-start items-center gap-1">
                     <input type="radio" id="respuesta3Pregunta3" name="respuestaPregunta3" value="C">
-                    <label class="cursor-pointer" for="respuesta3Pregunta3">C) Coyote</label>
+                    <label class="cursor-pointer" for="respuesta3Pregunta3">C) Encino</label>
                 </div>
                 <div class="flex justify-start items-center gap-1">
                     <input type="radio" id="respuesta4Pregunta3" name="respuestaPregunta3" value="D">
-                    <label class="cursor-pointer" for="respuesta4Pregunta3">D) Oso negro</label>
+                    <label class="cursor-pointer" for="respuesta4Pregunta3">D) Madoroño</label>
                 </div>
                 <div class="text-white bg-black mt-2 px-2 py-1" v-if="pregunta3Correcta">
                     Respuesta correcta B) Sotol
